@@ -1,0 +1,39 @@
+/* Font Families from: (https://fonts.google.com)
+- Font-Family: "Montserrat" 
+- Font-Family: "Barlow Condensed" */
+
+.d-flex {
+  display: flex;
+}
+nav {
+  background-color: hsl(224, 22%, 17%);
+  height: 3rem;
+  justify-content: space-between;
+}
+.container-contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logocontact {
+  font-size: 1.1rem;
+  color: #967e5b;
+  padding: 0.5rem;
+}
+.numbercontact {
+  font-family: "Barlow Condensed";
+  font-size: 1rem;
+  color: #f8f9f8;
+  padding: 0.5rem 0rem;
+}
+.hamburguer-botton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #f8f9f8;
+  padding: 0.5rem;
+}
+body {
+  background-color: #967e5b;
+}
