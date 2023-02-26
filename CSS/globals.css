@@ -2,13 +2,12 @@
 - Font-Family: "Montserrat" 
 - Font-Family: "Barlow Condensed" */
 
-.d-flex {
-  display: flex;
-}
 nav {
+  display: flex;
   background-color: hsl(224, 22%, 17%);
   height: 3rem;
   justify-content: space-between;
+  align-items: center;
 }
 .container-contact {
   display: flex;
@@ -16,15 +15,16 @@ nav {
   align-items: center;
 }
 .logocontact {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #967e5b;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem 1rem 1rem;
 }
 .numbercontact {
   font-family: "Barlow Condensed";
   font-size: 1rem;
+  font-weight: 500;
   color: #f8f9f8;
-  padding: 0.5rem 0rem;
+  padding: 1rem 0rem;
 }
 .hamburguer-botton {
   display: flex;
@@ -32,8 +32,28 @@ nav {
   align-items: center;
   font-size: 1.1rem;
   color: #f8f9f8;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+.header-576px {
+  display: flex;
+  max-width: 576px;
+  width: 100%;
+  padding-bottom: 66%; /* (altura/ancho) x 100% */
+  background: url("/IMG/img-001_Agreement_R1.5.jpeg") center center no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.white-shadow-grey {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #f8f9f8;
+  text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 1);
 }
 body {
-  background-color: #967e5b;
+  font-family: "Montserrat";
+  background-color: #f8f9f8;
+  flex-direction: column;
+  min-height: 100vh;
 }
