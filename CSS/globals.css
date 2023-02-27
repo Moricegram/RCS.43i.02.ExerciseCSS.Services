@@ -38,22 +38,65 @@ nav {
   display: flex;
   max-width: 576px;
   width: 100%;
-  padding-bottom: 66%; /* (altura/ancho) x 100% */
-  background: url("/IMG/img-001_Agreement_R1.5.jpeg") center center no-repeat;
+  padding-top: 1%; /* To control img heigh & Text Position */
+  padding-bottom: 1%; /* To control img heigh & Text Position */
+  background-image: url("/IMG/Agreement_576x384.jpg");
+  background-position: center;
   background-size: cover;
-  justify-content: center;
-  align-items: center;
+  background-repeat: no-repeat;
 }
-.white-shadow-grey {
+.header-frame {
+  display: flex;
   font-family: "Montserrat";
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #f8f9f8;
-  text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 1);
+  text-shadow: 0.2rem 0.2rem 0.14rem black, 0.5rem 0.5rem 1rem black;
+  text-align: center;
+  border: 0.4rem solid #f8f9f8;
+  padding: 12rem 1rem 1rem 1rem;
+  margin: 0.5rem;
 }
 body {
   font-family: "Montserrat";
   background-color: #f8f9f8;
   flex-direction: column;
   min-height: 100vh;
+}
+h1 {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #967e5b;
+  text-align: center;
+  padding: 2.5rem;
+}
+.article1 {
+  display: flex;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: hsl(224, 22%, 17%);
+  text-align: justify;
+  padding: 0 2.5rem 0 2.5rem;
+}
+h2 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(224, 22%, 17%);
+  text-align: center;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+.job-title {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: #967e5b;
+  text-align: center;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+}
+.centerx {
+  display: flex;
+  justify-content: center;
 }
