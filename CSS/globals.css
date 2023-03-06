@@ -128,7 +128,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 321px;
+  height: 20.0625rem;
 }
 .item {
   font-family: "Montserrat";
@@ -166,34 +166,54 @@ h3 {
   display: flex;
   background-image: url("/IMG/Hidra1_576x321sepia.png");
 }
+.spec-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 .spec-container {
   display: flex;
-  max-width: 576px;
-  width: 100%;
-  background-color: var(--Blue1);
-  height: 160px;
-  justify-content: center;
-  align-items: center;
+  height: 11.57rem;
+  flex-direction: column;
 }
-.spec-item {
+.spec-photo {
   display: flex;
   justify-content: center;
-  width: 130px;
-  height: 130px;
-  background-image: url("/IMG/Consultant1_130BN.png");
+  width: 8.125rem;
+  height: 8.125rem;
+}
+.figcap {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 8.125rem;
+  padding-top: 0.5rem;
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--Beige1);
+}
+.radius50 {
   border-radius: 50%;
 }
 .btn-container {
   display: flex;
   flex-direction: row;
-  background-color: chocolate;
+  background-color: var(--Blue1);
   list-style: none;
+  justify-content: center;
+  height: 3rem
 }
 .btn-item {
   text-decoration: none;
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--Ivory1);
   padding: 0.5rem;
-  border-radius: 0.25rem;
-  border: 2px solid var(--Beige1);
+  border:none;
   background-color: var(--Blue1);
   cursor: pointer;
   transition: all 0.2s;
