@@ -45,6 +45,15 @@ nav {
   color: var(--Ivory1);
   padding: 1rem;
 }
+.hamburguer-botton:hover {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--Ivory1);
+  background-color: var(--Beige1);
+  padding: 1rem;
+}
 .header-576px {
   display: flex;
   max-width: 576px;
@@ -106,10 +115,11 @@ h2 {
   text-align: center;
   padding: 1rem 2.5rem 1rem 2.5rem;
 }
-.centerx {
+.figure-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 10rem;
 }
 h3 {
   font-family: "Montserrat";
@@ -203,7 +213,7 @@ h3 {
   background-color: var(--Blue1);
   list-style: none;
   justify-content: center;
-  height: 3rem
+  height: 3rem;
 }
 .btn-item {
   text-decoration: none;
@@ -213,8 +223,21 @@ h3 {
   font-weight: 100;
   color: var(--Ivory1);
   padding: 0.5rem;
-  border:none;
+  border: none;
   background-color: var(--Blue1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-item:hover {
+  text-decoration: none;
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--Ivory1);
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--Beige1);
   cursor: pointer;
   transition: all 0.2s;
 }
