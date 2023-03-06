@@ -2,28 +2,39 @@
 - Font-Family: "Montserrat" 
 - Font-Family: "Barlow Condensed" */
 
+/* Definition of variables */
+:root {
+  --Blue1: hsl(224, 22%, 17%);
+  --Beige1: #967e5b;
+  --Ivory1: #f8f9f8;
+}
+* {
+  box-sizing: border-box;
+}
 nav {
   display: flex;
-  background-color: hsl(224, 22%, 17%);
+  max-width: 576px;
+  width: 100%;
+  background-color: var(--Blue1);
   height: 3rem;
   justify-content: space-between;
   align-items: center;
 }
-.container-contact {
+.contact-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.logocontact {
+.contact-logo {
   font-size: 1rem;
-  color: #967e5b;
+  color: var(--Beige1);
   padding: 1rem 0.5rem 1rem 1rem;
 }
-.numbercontact {
+.contact-number {
   font-family: "Barlow Condensed";
   font-size: 1rem;
   font-weight: 500;
-  color: #f8f9f8;
+  color: var(--Ivory1);
   padding: 1rem 0rem;
 }
 .hamburguer-botton {
@@ -31,7 +42,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   font-size: 1.1rem;
-  color: #f8f9f8;
+  color: var(--Ivory1);
   padding: 1rem;
 }
 .header-576px {
@@ -50,33 +61,32 @@ nav {
   font-family: "Montserrat";
   font-size: 1.3rem;
   font-weight: bold;
-  color: #f8f9f8;
+  color: var(--Ivory1);
   text-shadow: 0.2rem 0.2rem 0.14rem black, 0.5rem 0.5rem 1rem black;
   text-align: center;
-  border: 0.4rem solid #f8f9f8;
+  border: 0.4rem solid var(--Ivory1);
   padding: 12rem 1rem 1rem 1rem;
   margin: 0.5rem;
 }
 body {
   font-family: "Montserrat";
-  background-color: #f8f9f8;
-  flex-direction: column;
-  min-height: 100vh;
+  max-width: 576px;
+  align-items: center;
 }
 h1 {
   font-family: "Montserrat";
   font-size: 2rem;
   font-weight: bold;
-  color: #967e5b;
+  color: var(--Beige1);
   text-align: center;
   padding: 2.5rem;
 }
-.article1 {
+.presentation {
   display: flex;
   font-family: "Montserrat";
   font-size: 1.2rem;
   font-weight: 100;
-  color: hsl(224, 22%, 17%);
+  color: var(--Blue1);
   text-align: justify;
   padding: 0 2.5rem 0 2.5rem;
 }
@@ -84,19 +94,107 @@ h2 {
   font-family: "Montserrat";
   font-size: 1.5rem;
   font-weight: bold;
-  color: hsl(224, 22%, 17%);
+  color: var(--Blue1);
   text-align: center;
-  padding: 2.5rem 2.5rem 0 2.5rem;
+  padding: 5rem 2.5rem 0 2.5rem;
 }
 .job-title {
   font-family: "Montserrat";
   font-size: 1.3rem;
   font-weight: 100;
-  color: #967e5b;
+  color: var(--Beige1);
   text-align: center;
   padding: 1rem 2.5rem 1rem 2.5rem;
 }
 .centerx {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--Beige1);
+  text-align: center;
+  padding: 5rem 2.5rem 1rem 2.5rem;
+}
+.topics-container {
+  display: flex;
+  flex-direction: column;
+}
+.topics-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 321px;
+}
+.item {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--Ivory1);
+  text-shadow: 0.2rem 0.2rem 0.14rem black, 0.5rem 0.5rem 1rem black;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--Ivory1);
+  text-shadow: 0.1rem 0.1rem 0.14rem black;
+  text-align: center;
+  padding-top: 1rem;
+}
+.item-image1 {
+  display: flex;
+  background-image: url("/IMG/Arq1_576x321sepia.png");
+}
+.item-image2 {
+  display: flex;
+  background-image: url("/IMG/Struc1_576x321sepia.png");
+}
+.item-image3 {
+  display: flex;
+  background-image: url("/IMG/Topo1_576x321sepia.png");
+}
+.item-image4 {
+  display: flex;
+  background-image: url("/IMG/Hidra1_576x321sepia.png");
+}
+.spec-container {
+  display: flex;
+  max-width: 576px;
+  width: 100%;
+  background-color: var(--Blue1);
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+}
+.spec-item {
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  background-image: url("/IMG/Consultant1_130BN.png");
+  border-radius: 50%;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  background-color: chocolate;
+  list-style: none;
+}
+.btn-item {
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid var(--Beige1);
+  background-color: var(--Blue1);
+  cursor: pointer;
+  transition: all 0.2s;
 }
