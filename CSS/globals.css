@@ -14,9 +14,6 @@
 
 /* Start Media Query for width <=576 px */
 @media (max-width: 576px) {
-  .view-desktop {
-    display: none;
-  }
   nav {
     display: flex;
     width: 100vw;
@@ -41,6 +38,10 @@
     font-weight: 500;
     color: var(--Ivory1);
     padding: 2.7vw 0;
+  }
+  .nav-desktop,
+  .nav-desktop * {
+    display: none;
   }
   .hamburguer-botton {
     display: flex;
@@ -279,7 +280,7 @@
 }
 /* End Media Query for width <=576 px */
 
-/* Start Media Query for width >576 px */
+/* Start Media Query for width >576 px a 1199 px */
 @media (min-width: 577px) {
   nav {
     display: flex;
@@ -305,6 +306,10 @@
     font-weight: 500;
     color: var(--Ivory1);
     padding: 2vw 0;
+  }
+  .nav-desktop,
+  .nav-desktop * {
+    display: none;
   }
   .hamburguer-botton {
     display: flex;
@@ -348,7 +353,7 @@
   body {
     font-family: "Montserrat";
     align-items: center;
-    background-color: chartreuse;
+    background-color: var(--Ivory1);
   }
   h1 {
     font-family: "Montserrat";
@@ -542,15 +547,15 @@
     padding: 2vw 1vw 2vw 2vw;
   }
 }
-/* End Media Query for width (36.0625rem-74.9375rem) */
+/* End Media Query for width >576 px a 1199 px */
 
-/* Start Media Query for with >=75rem */
-@media (min-width: 75rem) {
+/* Start Media Query for with >=1200 px */
+@media (min-width: 1200px) {
   nav {
     display: flex;
     width: 100vw;
     background-color: var(--Blue1);
-    height: 8.5vw;
+    height: 4.7vw;
     justify-content: space-between;
     align-items: center;
   }
@@ -560,48 +565,38 @@
     align-items: center;
   }
   .symbols {
-    font-size: 3vw;
+    font-size: 2.2vw;
     color: var(--Beige1);
-    padding: 2.7vw 1.3vw 2.7vw 2.7vw;
+    padding: 2vw 1vw 2vw 2vw;
   }
   .contact-number {
     font-family: "Barlow Condensed";
-    font-size: 2.7vw;
+    font-size: 2vw;
     font-weight: 500;
     color: var(--Ivory1);
-    padding: 2.7vw 0;
+    padding: 2vw 0;
+  }
+  .nav-desktop,
+  .nav-desktop * {
+    display: flex;
   }
   .hamburguer-botton {
     display: none;
     justify-content: flex-end;
     align-items: center;
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--Ivory1);
-    padding: 2.7vw;
+    padding: 2vw;
   }
   .hamburguer-botton:hover {
-    display: none;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--Ivory1);
     background-color: var(--Beige1);
-    padding: 2.7vw;
+    padding: 2vw;
   }
-  /* Start Add desktop viewport */
-  .soc-cont-desk {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--Blue1);
-    justify-content: center;
-  }
-  .soc-symb-desk {
-    display: flex;
-    font-size: 5vw;
-    color: var(--Ivory1);
-    padding: 2.7vw 1.3vw 2.7vw 2.7vw;
-  }
-  /* End Add desktop viewport */
   .header-flex {
     display: flex;
     width: 100vw;
@@ -615,52 +610,52 @@
   .header-frame {
     display: flex;
     font-family: "Montserrat";
-    font-size: 3.5vw;
+    font-size: 2.6vw;
     font-weight: bold;
     color: var(--Ivory1);
-    text-shadow: 0.54vw 0.54vw 0.38vw black, 8px 8px 16px black;
+    text-shadow: 0.4vw 0.4vw 0.3vw black, 1.1vw 1.1vw 2.2vw black;
     text-align: center;
-    border: 1vw solid var(--Ivory1);
+    border: 0.8vw solid var(--Ivory1);
     padding: 32.5vw 2.7vw 2.7vw 2.7vw;
     margin: 1.3vw;
   }
   body {
     font-family: "Montserrat";
     align-items: center;
-    background-color: rgb(255, 0, 119);
+    background-color: var(--Ivory1);
   }
   h1 {
     font-family: "Montserrat";
-    font-size: 5.4vw;
+    font-size: 4.1vw;
     font-weight: bold;
     color: var(--Beige1);
     text-align: center;
-    padding: 6.75vw;
+    padding: 5.1vw;
   }
   .presentation {
     display: flex;
     font-family: "Montserrat";
-    font-size: 3.25vw;
+    font-size: 2.4vw;
     font-weight: 100;
     color: var(--Blue1);
     text-align: justify;
-    padding: 0 6.75vw 0 6.75vw;
+    padding: 0 5.1vw 0 5.1vw;
   }
   h2 {
     font-family: "Montserrat";
-    font-size: 4.05vw;
+    font-size: 3vw;
     font-weight: bold;
     color: var(--Blue1);
     text-align: center;
-    padding: 13.5vw 6.75vw 0 6.75vw;
+    padding: 10.1vw 5.1vw 0 5.1vw;
   }
   .job-title {
     font-family: "Montserrat";
-    font-size: 3.5vw;
+    font-size: 2.6vw;
     font-weight: 300;
     color: var(--Beige1);
     text-align: center;
-    padding: 2.7vw 6.75vw 2.7vw 6.75vw;
+    padding: 2vw 5.1vw 2vw 5.1vw;
   }
   .figure-content {
     display: flex;
@@ -670,11 +665,11 @@
   }
   h3 {
     font-family: "Montserrat";
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
     color: var(--Beige1);
     text-align: center;
-    padding: 13.5vw 6.75vw 2.7vw 6.75vw;
+    padding: 10.1vw 5.1vw 2vw 5.1vw;
   }
   .topics-img-flex {
     display: flex;
@@ -753,23 +748,23 @@
   }
   .spec-container {
     display: flex;
-    height: 31.2vw;
+    height: 23.4vw;
     flex-direction: column;
   }
   .spec-photo {
     display: flex;
     justify-content: center;
-    width: 22vw;
-    height: 22vw;
+    width: 16.5vw;
+    height: 16.5vw;
   }
   .figcap {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 22vw;
-    padding-top: 1.3vw;
+    width: 16.5vw;
+    padding-top: 1vw;
     font-family: "Montserrat";
-    font-size: 2.4vw;
+    font-size: 1.8vw;
     font-weight: bold;
     color: var(--Beige1);
   }
@@ -787,10 +782,10 @@
     text-decoration: none;
     font-family: "Montserrat";
     text-decoration: none;
-    font-size: 2.7vw;
+    font-size: 2vw;
     font-weight: 100;
     color: var(--Ivory1);
-    padding: 1.3vw;
+    padding: 1vw;
     border: none;
     background-color: var(--Blue1);
     cursor: pointer;
@@ -800,10 +795,10 @@
     text-decoration: none;
     font-family: "Montserrat";
     text-decoration: none;
-    font-size: 2.7vw;
+    font-size: 2vw;
     font-weight: 100;
     color: var(--Ivory1);
-    padding: 1.3vw;
+    padding: 1vw;
     border: none;
     background-color: var(--Beige1);
     cursor: pointer;
@@ -816,9 +811,9 @@
     justify-content: center;
   }
   .socials-symbols {
-    font-size: 5vw;
+    font-size: 3.8vw;
     color: var(--Beige1);
-    padding: 2.7vw 1.3vw 2.7vw 2.7vw;
+    padding: 2vw 1vw 2vw 2vw;
   }
 }
 /* End Media Query for with >=75rem */
